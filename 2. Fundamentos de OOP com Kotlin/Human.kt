@@ -12,12 +12,12 @@ class Human{
 
 	constructor()
 
-	fun addNameAndCpf() = "$name e $cpf"
+	fun humanInfo() = "$name e $cpf"
 }
 
 // Main function
 fun main() {
 	val edu = Human()
 
-	println(edu.addNameAndCpf())
+	println(edu.humanInfo())
 }
