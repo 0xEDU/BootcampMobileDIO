@@ -1,10 +1,10 @@
 // 1. Creating a class
-// 2. 
+// 2. Using 'private set'
 
 // Class defining a human
 class Human{
 	var name:String = "Edu"
-	
+
 	var cpf:String = "123.132.123-12"	
 	private set
 
