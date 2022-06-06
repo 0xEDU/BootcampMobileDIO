@@ -1,9 +1,14 @@
-import java.math.BigDecimal
-
 abstract class Staff(
     name:String,
     id:String,
-    val wage:BigDecimal
+    val wage:Double
 ) : Human(name, id) {
-    abstract fun calcBenefits()
+    protected abstract fun calcBenefits(): Double
+
+    override fun toString(): String = """
+        Name: $name
+        ID: $id
+        Wage: $wage
+        Benefits: ${calcBenefits()}
+    """.trimIndent()
 }
