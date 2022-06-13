@@ -7,8 +7,8 @@ fun main() {
         println(wage)
     }
     println("---------------------")
-/*    println("Maior salário: ${wages.max()}")
-    println("Menor salário: ${wages.min()}")*/
+    println("Maior salário: ${wages.maxOrNull()}")
+    println("Menor salário: ${wages.minOrNull()}")
     println("Média salarial: ${wages.average()}")
 
     val great = wages.filter { it > 2500 }
